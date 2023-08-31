@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button[type='submit'], a.button {
+  @apply bg-slate-200 p-2 rounded-md hover:bg-slate-300;
+}
