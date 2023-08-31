@@ -21,8 +21,10 @@
 </section>
 
 <style>
-  article {
-    /* I don't think Tailwind supports subgrid yet. This aligns the text correctly between each article */
-    grid-template-rows: subgrid;
+  /* I don't think Tailwind supports subgrid yet. This aligns the text correctly between each article on supported browsers */
+  @supports(grid-template-rows: subgrid) {
+    section {
+      grid-template-rows: subgrid;
+    }
   }
 </style>
